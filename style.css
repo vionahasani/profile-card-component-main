@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
+body{
+    font-family: "Kumbh Sans";
+    background-color: hsl(185, 75%, 39%);
+    background-image: url("./images/bg-pattern-top.svg"), url("./images/bg-pattern-bottom.svg");
+    background-position: right 52vw bottom 40vh, left 52vw top 44vh;
+    background-repeat: no-repeat, no-repeat;
+    height: 100vh;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+.card{
+    background-color: hsl(0, 0%, 100%);
+    max-width: 350px;
+    flex-grow: 1;
+    align-self: center;
+    border: 0;
+    border-radius: 15px;
+}
+.card__header{
+    padding: 0;
+}
+.card__header img{
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    width: 100%;
+}
+.card__content{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.card__content img{
+    position: absolute;
+    top: -35%;
+    border-radius: 100%;
+    border: 5px solid white;
+    align-self: center;
+}
+.card__content h4{
+    margin-top: 80px;
+    align-self: center;
+    font-weight: 700;
+    font-size: 18px;
+}
+.card__content span{
+    margin-left: 5px;
+    font-weight: 400;
+    color: hsl(0, 0%, 59%);
+}
+.card__content p{
+    align-self: center;
+    color: hsl(0, 0%, 59%);
+    font-size: 14px;
+}
+.card__footer{
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid hsl(225, 24%, 87%);
+    background-color: hsl(0, 0%, 100%);
+    border-bottom-left-radius: 15px !important;
+    border-bottom-right-radius: 15px !important;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.card__footer--col{
+    display: flex;
+    flex-direction: column;
+}
+.card__footer--col h4{
+    font-size: 18px;
+    font-weight: 700;
+    align-self: center;
+    margin: 0px;
+}
+.card__footer--col p{
+    align-self: center;
+    font-size: 11px;
+    font-weight: 400;
+    color: hsl(0, 0%, 59%);
+    letter-spacing: 1px;
+    margin: 0;
+}
+@media only screen and (max-width: 400px) {
+    body{
+        background-position: right 40vw bottom 45vh, left 40vw top 44vh;
+    }
+}
